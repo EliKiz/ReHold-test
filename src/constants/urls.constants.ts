@@ -1,1 +1,0 @@
-export const URL_BNBUSDT = 'https://api.bybit.com/v2/public/tickers?symbol=BNBUSDT'

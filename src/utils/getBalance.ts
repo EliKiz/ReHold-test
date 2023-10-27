@@ -1,6 +1,6 @@
 import Web3 from 'web3';
 
-async function getBalance(address: `0x${string}` | undefined) {
+export const getBalance = async (address: `0x${string}` | undefined) => {
   let balance = null;
 
   if (typeof window.ethereum !== 'undefined') {
@@ -14,6 +14,4 @@ async function getBalance(address: `0x${string}` | undefined) {
     }
   }
   return balance;
-}
-
-export default getBalance;
+};

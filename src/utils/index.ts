@@ -1,3 +1,2 @@
-import getBalance from './getBalance';
-import getSymbolPrice from './getSimbolPrice'
-export { getBalance, getSymbolPrice };
+export { getBalance } from './getBalance';
+export { getSymbolPrice } from './getSimbolPrice';

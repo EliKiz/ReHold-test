@@ -1,5 +1,5 @@
-const getSymbolPrice = async (symbol: string) => {
-  const url = `https://api.bybit.com/v2/public/tickers?symbol=${symbol}`;
+export const getSymbolPrice = async (symbol: string) => {
+  const url = `${process.env.BASE_URL}?symbol=${symbol}`;
 
   try {
     const response = await fetch(url);
@@ -15,5 +15,3 @@ const getSymbolPrice = async (symbol: string) => {
     return null;
   }
 };
-
-export default getSymbolPrice

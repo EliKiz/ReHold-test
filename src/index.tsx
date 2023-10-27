@@ -3,11 +3,12 @@ import App from './App/App';
 import { ErrorBoundary } from './App/providers/ErrorBoundary';
 import QueryClientProvider from './App/providers/QueryClientProvider/QueryClientProvider';
 import { WagmiConfigProvider } from './App/providers/WagmiConfigProvider';
-import './index.css';
+import './styles';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
+
 root.render(
   <QueryClientProvider>
     <WagmiConfigProvider>

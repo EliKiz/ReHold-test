@@ -1,5 +1,4 @@
-import { IConnectButtonProps } from './type';
-import './style.css';
+import { IConnectButtonProps } from './types';
 
 export const ConnectButton: React.FC<Partial<IConnectButtonProps>> = (
   props,

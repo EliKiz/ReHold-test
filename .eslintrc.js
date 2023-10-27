@@ -7,7 +7,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
-    "plugin:react/jsx-runtime",
+    'plugin:react/jsx-runtime',
   ],
   overrides: [
     {
@@ -27,7 +27,8 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'react'],
   rules: {
-    "@typescript-eslint/no-explicit-any": "error",
-    "@typescript-eslint/no-empty-function": "off"
+    '@typescript-eslint/no-explicit-any': 'error',
+    '@typescript-eslint/no-empty-function': 'off',
   },
+  ignorePatterns: ['global.d.ts'],
 };

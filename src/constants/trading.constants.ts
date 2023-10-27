@@ -1,4 +1,4 @@
-const TRADING_PAIRS: any = {
+export const TRADING_PAIRS = {
   BNBUSDT: 'BNBUSDT',
   BTCUSDT: 'BTCUSDT',
   ETHUSDT: 'ETHUSDT',
@@ -8,5 +8,3 @@ const TRADING_PAIRS: any = {
   SOLUSDT: 'SOLUSDT',
   DOTUSDT: 'DOTUSDT',
 } as const;
-
-export default TRADING_PAIRS;
