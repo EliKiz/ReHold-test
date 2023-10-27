@@ -1,5 +1,8 @@
 export const getSymbolPrice = async (symbol: string) => {
-  const url = `${process.env.BASE_URL}?symbol=${symbol}`;
+  
+  const BASE_URL = 'https://api.bybit.com/v2/public/tickers'
+  const url = `${BASE_URL}?symbol=${symbol}`;
+  
 
   try {
     const response = await fetch(url);
@@ -9,6 +12,7 @@ export const getSymbolPrice = async (symbol: string) => {
 
     const data = await response.json();
     const ticker = data.result[0];
+    console.log('ticker', ticker)
     return ticker.last_price;
   } catch (error) {
     console.error('Error:', error);

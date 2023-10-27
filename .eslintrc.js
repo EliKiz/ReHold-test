@@ -30,5 +30,5 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/no-empty-function': 'off',
   },
-  ignorePatterns: ['global.d.ts'],
+  ignorePatterns: ['global.d.ts', 'craco.config.js'],
 };

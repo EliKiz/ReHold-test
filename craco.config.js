@@ -1,7 +1,8 @@
-import { resolve } from 'path';
-export const webpack = {
+const path = require('path');
+module.exports = {
+  webpack: {
     alias: {
-        // eslint-disable-next-line no-undef
-        '@': resolve(__dirname, 'src'),
+      '@': path.resolve(__dirname, 'src'),
     },
+  },
 };
